@@ -1,0 +1,184 @@
+.gap-9{
+    gap: 40vh;
+}
+.font-size{
+    font-size: 25px;
+}
+.f-weight{
+    font-weight: 300;
+}
+
+.bg-form{
+    background-image: url(../others/art\ squares.png);
+    background-size: contain;
+}
+.bg-form-2{
+    background-image: url(../others/short-dashes.png);
+    background-size: contain;
+}
+.last{
+    text-align: center;
+    text-align-last: center;
+}
+a:hover{
+    border-bottom: 1px solid black;
+}
+.pos-2{
+    top: 15vw;
+    right: 2vw;
+}
+.bg-img{
+    background-image: url(../others/shocked-fair-haired-girl-posing-yellow-wall-with-mouth-open-surprised-glamorous-lady.jpg);
+    background-position: top center;
+    background-size: cover;
+    opacity: 0.8;
+}
+.bg-img-2{
+    background-image: url(../others/blithesome-european-girl-with-long-hairstyle-expressing-happiness-emotional-fair-haired-woman-posing-yellow-wall.jpg);
+    background-position: top center;
+    background-size: cover;
+    opacity: 0.8;
+}
+.bg-blue{
+    background-color: rgb(47, 47, 141);
+}
+.text-blue{
+    color: rgb(47, 47, 141);
+}
+.text-pink{
+    color: #FF3FBF;
+}
+.bg-orange{
+    background-color: rgb(218, 147, 17);
+}
+.bg-blend{
+    background-image: linear-gradient(to left,#FF3FBF, rgb(218, 147, 17))
+}
+.bg-blend-2{
+    background-image: linear-gradient(to left, rgb(17, 195, 218) ,rgb(218, 147, 17))
+}
+.bg-blend-3{
+    background-image: linear-gradient(to left, rgb(17, 195, 218) ,rgb(238, 255, 5))
+}
+.bg-blend-4{
+    background-image: linear-gradient(to left,  rgb(238, 255, 5),rgb(218, 147, 17))
+}
+.text-orange{
+    color: orange;
+}
+.h{
+    min-height: 100vh;
+}
+.h-2{
+    min-height: 40vh;
+}
+.h-3{
+    min-height: 60vh;
+}
+.h-4{
+    max-height: 57vh;
+}
+.w{
+    width: max-content;
+}
+.h1{
+    font-size: 20vw;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background-image: url(../others/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+.typer::before,
+.typer::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.typer::before{
+    background: white;
+    animation: 
+    typewriter 3s steps(18) 1s forwards;
+}
+.typer::after{
+    width: 0.1em;
+    background-color: black;
+    animation: 
+    typewriter 3s steps(18) 1s forwards
+    ,blink 750ms steps(18)  infinite;
+}
+
+.Collection{
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 5s forwards;
+}
+.Collection-2{
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 6s forwards;
+}
+
+@keyframes fadeInUp {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes typewriter {
+    to{
+        left: 100%;
+    }
+}
+@keyframes blink {
+    to{
+        background-color: transparent;
+    }
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.outline-0{
+    outline: 0ch;
+    border: 0px;
+}
+
+
+.pos{
+    top: 15vw;
+    left: 10vw;
+}
+@media (min-width : 414px) {
+    .pos{
+        top: 10vw;
+        left: 10vw;
+    }
+}
+@media (min-width : 500px) {
+    .h1{
+        font-size: 10vw;
+    }
+    
+}
+@media (min-width : 768px) {
+    .pos{
+        top: 5vw;
+        left: 5vw;
+    }
+}
+@media (min-width : 1070px) {
+    .pos{
+        top: 3vw;
+        left: 3vw;
+    }
+}
+
